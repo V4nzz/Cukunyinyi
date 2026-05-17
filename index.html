@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekowisata Mangrove Cuku Nyinyi · Desa Sidodadi, Pesawaran</title>
+  <meta name="description" content="Ekowisata Mangrove Cuku Nyinyi – destinasi wisata alam dan konservasi mangrove di Desa Sidodadi, Pesawaran, Lampung. Jelajahi keindahan hutan bakau dan ekosistem pesisir." />
+  <meta property="og:title" content="Ekowisata Mangrove Cuku Nyinyi" />
+  <meta property="og:description" content="Konservasi & Ekowisata Mangrove di Pesawaran, Lampung." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+
+  <!-- ============================
+       GLASSMORPHISM NAVIGATION
+  ============================= -->
+  <nav class="navbar" id="navbar" aria-label="Navigasi utama">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Beranda Cuku Nyinyi">
+        <div class="logo-icon-wrap">
+          <span class="logo-leaf">🌿</span>
+          <div class="logo-circle"></div>
+        </div>
+        <span>Cuku Nyinyi</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#gallery" class="nav-link">Galeri</a></li>
+        <li><a href="#info" class="nav-link">Informasi</a></li>
+        <li><a href="#contact-footer" class="nav-link nav-cta">Kunjungi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================
+       HERO SECTION
+  ============================= -->
+  <section class="hero" id="hero" aria-label="Selamat datang">
+    <div class="hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1800&q=85&auto=format&fit=crop"
+        alt="Hutan mangrove pesisir Lampung"
+        role="presentation"
+        class="hero-img"
+        loading="eager"
+        onerror="this.src='https://picsum.photos/1800/1200?nature'"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Desa Sidodadi · Pesawaran · Lampung</p>
+      <h1 class="hero-title">
+        Desa Wisata<br/>
+        <em>Sidodadi</em>
+      </h1>
+      <p class="hero-tagline">Jelajahi Pesona Mangrove Cuku Nyinyi &amp; Budaya Lokal.</p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn btn-primary magnetic">Jelajahi Kawasan</a>
+        <a href="#info" class="btn btn-ghost magnetic">Informasi Kunjungan</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Gulir ke bawah</span>
+    </div>
+  </section>
+
+  <!-- ============================
+       ABOUT SECTION
+  ============================= -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about-container">
+
+      <div class="about-text reveal">
+        <span class="section-label">Warisan &amp; Nama</span>
+        <h2 class="section-title" id="about-heading">
+          Legenda <br/>Cuku Nyinyi
+        </h2>
+        <p class="about-lead">
+          Nama "Cuku Nyinyi" berasal dari bahasa Lampung: <strong>Cuku</strong> yang berarti kaki, dan <strong>Nyi Nyi</strong> yang merujuk pada nyamuk-nyamuk kecil pesisir.
+        </p>
+        <p class="about-body">
+          Dahulu, area ini merupakan tempat favorit bagi para nelayan lokal untuk mengistirahatkan kaki mereka sejenak setelah melaut. Kini, melalui semangat masyarakat Desa Sidodadi, kawasan seluas ±12 Hektare ini bertransformasi menjadi benteng konservasi dan destinasi edukatif yang asri.
+        </p>
+        <p class="about-body">
+          Saat ini, ±5 Hektare kawasan mangrove dikelola secara intensif untuk program <em>edutourism</em>, menyatukan kelestarian alam dengan pemberdayaan ekonomi masyarakat Desa Sidodadi, Teluk Pandan, Pesawaran.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item reveal" style="transition-delay: 0.1s;">
+            <span class="stat-number">±12</span>
+            <span class="stat-label">Total Hektare</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item reveal" style="transition-delay: 0.2s;">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Ha Edutourism</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item reveal" style="transition-delay: 0.3s;">
+            <span class="stat-number">12m</span>
+            <span class="stat-label">Tower Bambu</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual reveal">
+        <div class="about-img-frame">
+          <img
+            src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=900&q=85&auto=format&fit=crop"
+            alt="Pemandangan hutan bakau yang asri"
+            class="about-img"
+            loading="lazy"
+            onerror="this.src='https://picsum.photos/900/1200?forest'"
+          />
+          <div class="about-img-badge">
+            <span>🌱 Sejak 2015</span>
+          </div>
+        </div>
+        <div class="about-img-secondary-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80&auto=format&fit=crop"
+            alt="Wisata perahu di antara mangrove"
+            class="about-img-secondary"
+            loading="lazy"
+            onerror="this.src='https://picsum.photos/600/400?lake'"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================
+       STICKY GALLERY SECTION
+  ============================= -->
+  <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+
+    <div class="gallery-intro reveal">
+      <span class="section-label">Galeri Kawasan</span>
+      <h2 class="section-title gallery-title" id="gallery-heading">Flora, Fauna &amp;<br/>Pemandangan</h2>
+    </div>
+
+    <!-- Sticky Scroll Grid: kiri & kanan scroll, tengah sticky 3-baris -->
+    <div class="sgal-grid">
+
+      <!-- LEFT: 5 scrolling images -->
+      <div class="sgal-col sgal-scroll">
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80&auto=format&fit=crop" alt="Mangrove Trekking" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Aktivitas</span><p>Mangrove Trekking</p><small>Menyusuri Jalur Kayu</small></figcaption>
+        </figure>
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80&auto=format&fit=crop" alt="Boat Tours" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Eksplorasi</span><p>Boat Tours</p><small>Menjelajah Fauna Pesisir</small></figcaption>
+        </figure>
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80&auto=format&fit=crop" alt="Pantai Pesisir" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Santai</span><p>Fishing &amp; Swimming</p><small>Kenikmatan Air Pesisir</small></figcaption>
+        </figure>
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80&auto=format&fit=crop" alt="Aerial Hutan" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Konservasi</span><p>Aerial View Mangrove</p><small>12 Ha Kawasan Hijau</small></figcaption>
+        </figure>
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80&auto=format&fit=crop" alt="Program Konservasi" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Edukasi</span><p>Program Konservasi</p><small>Nursery &amp; Aksi Tanam</small></figcaption>
+        </figure>
+      </div>
+
+      <!-- CENTER: sticky 3-row (stays pinned while sides scroll) -->
+      <div class="sgal-col sgal-sticky">
+        <figure class="sgal-fig sgal-fig--stretch">
+          <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=700&q=85&auto=format&fit=crop" alt="Daun Mangrove Bokeh" class="sgal-img" loading="lazy"/>
+        </figure>
+        <figure class="sgal-fig sgal-fig--stretch">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=85&auto=format&fit=crop" alt="Cahaya Hutan Bakau" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption">
+            <span class="sgal-tag">Landmark Lokal</span>
+            <p>Replika Menara Eiffel</p>
+            <small>Bambu 12 meter - Ikon Sidodadi</small>
+            <a href="#info" class="btn btn-primary btn-sm" style="align-self:flex-start;margin-top:0.5rem;">Rencanakan Kunjungan</a>
+          </figcaption>
+        </figure>
+        <figure class="sgal-fig sgal-fig--stretch">
+          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=700&q=85&auto=format&fit=crop" alt="Panorama Alam Tropis" class="sgal-img" loading="lazy"/>
+        </figure>
+      </div>
+
+      <!-- RIGHT: 5 scrolling images -->
+      <div class="sgal-col sgal-scroll">
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80&auto=format&fit=crop" alt="Pantai Sidodadi" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Seni Budaya</span><p>Kuda Kepang</p><small>Atraksi Tradisional</small></figcaption>
+        </figure>
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80&auto=format&fit=crop" alt="Pemandangan Alam" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Kearifan Lokal</span><p>Ragi Tapai</p><small>Produksi Tradisional Sidodadi</small></figcaption>
+        </figure>
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80&auto=format&fit=crop" alt="Pesisir Alam" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Seni</span><p>Tari Lampung &amp; Silat</p><small>Harmoni Gerak Warga</small></figcaption>
+        </figure>
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&auto=format&fit=crop" alt="Danau Alam" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Alam</span><p>Ekowisata Pesisir</p><small>Teluk Pandan, Pesawaran</small></figcaption>
+        </figure>
+        <figure class="sgal-fig">
+          <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&q=80&auto=format&fit=crop" alt="Hutan Tropis" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption"><span class="sgal-tag">Flora</span><p>Hutan Tropis Mangrove</p><small>Biodiversitas Pesisir</small></figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       INFORMATION SECTION
+  ============================= -->
+  <section class="info-section" id="info" aria-labelledby="info-heading">
+    <div class="info-container">
+
+      <div class="info-header reveal">
+        <span class="section-label">Informasi Kunjungan</span>
+        <h2 class="section-title" id="info-heading">Rencanakan<br/>Perjalanan Anda</h2>
+      </div>
+
+      <div class="info-cards reveal-stagger">
+
+        <article class="info-card reveal" id="edu-card">
+          <div class="info-card-icon" aria-hidden="true">🌱</div>
+          <h3 class="info-card-title">Program Edukasi</h3>
+          <p class="info-card-desc">Pelajari konservasi mangrove di pusat pembibitan kami.</p>
+          <ul class="info-card-list" role="list">
+            <li>Nursery Tour (Pembibitan)</li>
+            <li>Aksi Tanam Mangrove</li>
+            <li>Identifikasi Spesies</li>
+            <li>Workshop Kelompok Tani</li>
+          </ul>
+        </article>
+
+        <article class="info-card info-card--featured reveal" id="culinary-card">
+          <div class="info-card-icon" aria-hidden="true">🦀</div>
+          <h3 class="info-card-title">Kuliner Khas</h3>
+          <p class="info-card-desc" style="color: var(--color-white); opacity: 0.85;">Cicipi kelezatan hasil laut Sidodadi.</p>
+          <ul class="info-card-list" role="list">
+            <li style="color: var(--color-white);">Pempek Kepiting Batu</li>
+            <li style="color: var(--color-white);">Kerupuk Kepiting Batu</li>
+            <li style="color: var(--color-white);">Ikan Bawal Bakar</li>
+            <li style="color: var(--color-white);">Olahan Ragi Tapai</li>
+          </ul>
+        </article>
+
+        <article class="info-card reveal" id="stay-card">
+          <div class="info-card-icon" aria-hidden="true">🏡</div>
+          <h3 class="info-card-title">Akomodasi &amp; Fasilitas</h3>
+          <p class="info-card-desc">Kenyamanan dalam kearifan desa.</p>
+          <ul class="info-card-list" role="list">
+            <li>Home Stay Warga Lokal</li>
+            <li>Pondok Pertemuan</li>
+            <li>Pendaftaran QR Barcode</li>
+            <li>Area Parkir Luas</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <!-- Facilities strip -->
+      <div class="facilities-strip">
+        <span class="section-label">Fasilitas Tersedia</span>
+        <div class="facilities-list" role="list" aria-label="Daftar fasilitas">
+          <div class="facility-item" role="listitem">
+            <span aria-hidden="true">🛤️</span>
+            <span>Boardwalk 1.2 km</span>
+          </div>
+          <div class="facility-item" role="listitem">
+            <span aria-hidden="true">🏠</span>
+            <span>Gazebo &amp; Shelter</span>
+          </div>
+          <div class="facility-item" role="listitem">
+            <span aria-hidden="true">🚻</span>
+            <span>Toilet Umum</span>
+          </div>
+          <div class="facility-item" role="listitem">
+            <span aria-hidden="true">🅿️</span>
+            <span>Area Parkir</span>
+          </div>
+          <div class="facility-item" role="listitem">
+            <span aria-hidden="true">📸</span>
+            <span>Spot Foto</span>
+          </div>
+          <div class="facility-item" role="listitem">
+            <span aria-hidden="true">🌊</span>
+            <span>Perahu Wisata</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       BOLD GIANT FOOTER
+  ============================= -->
+  <footer class="site-footer" id="contact-footer" aria-label="Footer situs">
+    <div class="footer-inner">
+
+      <div class="footer-top">
+        <p class="footer-tagline">Conserve Mangrove, Empower Community - Desa Sidodadi</p>
+        <p class="footer-contact-note">Untuk informasi wisata, reservasi grup, atau edukasi pembibitan.</p>
+        <div class="footer-contact-links">
+          <a href="https://wa.me/6282379631962" target="_blank" rel="noopener noreferrer" class="footer-wa-link" id="footer-wa-link">
+            <span aria-hidden="true">💬</span> Bpk. Andi Sofiyan
+          </a>
+          <a href="https://instagram.com/ekowisatacukunyinyi" target="_blank" rel="noopener noreferrer" class="footer-email-link" id="footer-ig">
+            <span aria-hidden="true">📷</span> @ekowisatacukunyinyi
+          </a>
+        </div>
+      </div>
+
+      <!-- Giant typography -->
+      <div class="footer-giant" aria-hidden="true">
+        <span class="footer-giant-text">CUKU&nbsp;NYINYI</span>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Ekowisata Mangrove Cuku Nyinyi · Desa Sidodadi, Pesawaran, Lampung</p>
+        <p class="footer-credit">Dirancang dengan ❤️ untuk kelestarian alam</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================
+       FLOATING WHATSAPP BUTTON
+  ============================= -->
+  <a
+    href="https://wa.me/6281274107430"
+    class="wa-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    id="wa-float-btn"
+    aria-label="Tanya pengelola lewat WhatsApp"
+  >
+    <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-label">Tanya Pengelola</span>
+  </a>
+
+  <!-- Navbar scroll JS (pure vanilla) -->
+  <script>
+    // Navbar scroll JS
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Hamburger toggle
+    const toggle = document.getElementById('navToggle');
+    const menu   = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('open', !open);
+      toggle.classList.toggle('active', !open);
+    });
+
+    // Close menu on link click
+    menu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ==========================================
+    // PREMIUM INTERACTIONS
+    // ==========================================
+
+    // 1. CUSTOM CURSOR
+    const cursor = document.getElementById('cursor');
+    const follower = document.getElementById('cursorFollower');
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
+    let followerX = 0, followerY = 0;
+
+    window.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+      // Small dot follows almost instantly (lerp speed increased)
+      cursorX += (mouseX - cursorX) * 0.3;
+      cursorY += (mouseY - cursorY) * 0.3;
+      cursor.style.transform = `translate3d(calc(${cursorX}px - 50%), calc(${cursorY}px - 50%), 0)`;
+
+      // Follower has a smooth but faster lag
+      followerX += (mouseX - followerX) * 0.18;
+      followerY += (mouseY - followerY) * 0.18;
+      follower.style.transform = `translate3d(calc(${followerX}px - 50%), calc(${followerY}px - 50%), 0)`;
+
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Hover states for cursor
+    document.querySelectorAll('a, button, .gallery-item, .info-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.add('active');
+        follower.classList.add('active');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('active');
+        follower.classList.remove('active');
+      });
+    });
+
+    // 2. REVEAL ON SCROLL
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          // revealObserver.unobserve(entry.target); // keep it if you want repeat animation
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    // 3. MAGNETIC BUTTONS
+    document.querySelectorAll('.magnetic').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        
+        btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+      });
+      
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = `translate(0, 0)`;
+      });
+    });
+  </script>
+  <!-- Lenis Smooth Scroll (equivalent of ReactLenis from reference component) -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script>
+    // Initialize Lenis — same smooth scroll as ReactLenis in the reference component
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      smoothWheel: true,
+    });
+
+    function rafLoop(time) {
+      lenis.raf(time);
+      requestAnimationFrame(rafLoop);
+    }
+    requestAnimationFrame(rafLoop);
+  </script>
+
+</body>
+</html>
