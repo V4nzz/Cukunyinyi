@@ -82,7 +82,8 @@ body {
   color: var(--color-text);
   line-height: 1.7;
   overflow-x: hidden;
-  cursor: none; /* Hide default cursor for custom cursor */
+  cursor: none;
+  -webkit-overflow-scrolling: touch; /* native momentum scroll on iOS */
 }
 
 @media (max-width: 1024px) {
@@ -677,10 +678,10 @@ body:hover .cursor-follower {
 .sgal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  padding: 0 6px 6px;
-  background-color: #0B180F;
-  align-items: start; /* crucial: sticky only works when parent is not stretch */
+  gap: 4px;
+  padding: 0 4px 4px;
+  background-color: var(--color-bg-alt);
+  align-items: start;
 }
 
 /* Scrolling columns */
@@ -704,7 +705,7 @@ body:hover .cursor-follower {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  background: #0B180F;
+  background: var(--color-bg-alt);
 }
 
 /* Side-column images: fixed height like h-96 */
@@ -1187,7 +1188,7 @@ body:hover .cursor-follower {
   .sgal-sticky { height: 100vh; }
 
   .info-cards { grid-template-columns: 1fr 1fr; }
-  .info-card:last-child { grid-column: 1 / -1; max-width: 480px; margin: 0 auto; }
+  .info-card:last-child { grid-column: 1 / -1; max-width: 100%; width: 100%; }
 }
 
 /* ============================================================
@@ -1262,7 +1263,7 @@ body:hover .cursor-follower {
 
   /* Info cards — single column on mobile */
   .info-cards { grid-template-columns: 1fr; }
-  .info-card:last-child { grid-column: 1; max-width: unset; }
+  .info-card:last-child { grid-column: 1; max-width: 100%; width: 100%; margin: 0; }
   .info-container { padding: 0 var(--space-md); }
 
   /* Footer */

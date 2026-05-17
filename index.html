@@ -182,6 +182,11 @@
       <div class="sgal-col sgal-sticky">
         <figure class="sgal-fig sgal-fig--stretch">
           <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=700&q=85&auto=format&fit=crop" alt="Daun Mangrove Bokeh" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption">
+            <span class="sgal-tag">Flora</span>
+            <p>Ekosistem Mangrove</p>
+            <small>Keanekaragaman hayati pesisir Sidodadi</small>
+          </figcaption>
         </figure>
         <figure class="sgal-fig sgal-fig--stretch">
           <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=85&auto=format&fit=crop" alt="Cahaya Hutan Bakau" class="sgal-img" loading="lazy"/>
@@ -194,6 +199,11 @@
         </figure>
         <figure class="sgal-fig sgal-fig--stretch">
           <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=700&q=85&auto=format&fit=crop" alt="Panorama Alam Tropis" class="sgal-img" loading="lazy"/>
+          <figcaption class="sgal-caption">
+            <span class="sgal-tag">Pemandangan</span>
+            <p>Panorama Alam Tropis</p>
+            <small>Keindahan alam Teluk Pandan dari atas</small>
+          </figcaption>
         </figure>
       </div>
 
@@ -468,26 +478,7 @@
       });
     });
   </script>
-  <!-- Lenis Smooth Scroll (equivalent of ReactLenis from reference component) -->
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
-  <script>
-    // Lenis optimized — lightweight & responsive scroll feel
-    const lenis = new Lenis({
-      duration: 0.75,                          // was 1.2 — shorter = snappier
-      easing: (t) => 1 - Math.pow(1 - t, 3),  // cubic ease-out: fast start, gentle end
-      orientation: 'vertical',
-      smoothWheel: true,
-      wheelMultiplier: 1.1,                    // slight boost per wheel tick
-      touchMultiplier: 1.5,
-      infinite: false,
-    });
-
-    function rafLoop(time) {
-      lenis.raf(time);
-      requestAnimationFrame(rafLoop);
-    }
-    requestAnimationFrame(rafLoop);
-  </script>
 
 </body>
 </html>
+
