@@ -471,12 +471,15 @@
   <!-- Lenis Smooth Scroll (equivalent of ReactLenis from reference component) -->
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
   <script>
-    // Initialize Lenis — same smooth scroll as ReactLenis in the reference component
+    // Lenis optimized — lightweight & responsive scroll feel
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      duration: 0.75,                          // was 1.2 — shorter = snappier
+      easing: (t) => 1 - Math.pow(1 - t, 3),  // cubic ease-out: fast start, gentle end
       orientation: 'vertical',
       smoothWheel: true,
+      wheelMultiplier: 1.1,                    // slight boost per wheel tick
+      touchMultiplier: 1.5,
+      infinite: false,
     });
 
     function rafLoop(time) {
